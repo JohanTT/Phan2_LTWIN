@@ -274,27 +274,51 @@ namespace Phần_2._Cấu_trúc_lặp
             Console.WriteLine("Tong 1 + 1/2! + 1/3! + ... + 1/n! la: {0}", Tinh(n));
             Console.ReadKey();
         }
-        
-        // ______________________________BAI 38______________________________
-        static void Bai38()
-        {
-            
-        }
-        // ______________________________BAI 39______________________________
-        static void Bai39()
-        {
-            
-        }
+
         // ______________________________BAI 40______________________________
+        //tao ham mu tu dinh nghia
+        public static int HamPow(int num, int exp)
+        {
+            int ket_qua = 1;
+            int i;
+            for (i = 1; i <= exp; i++)
+                ket_qua = ket_qua * num;
+            return ket_qua;
+        }
+        
         static void Bai40()
         {
-            
+            int x;
+            int y;
+            Console.Write("Nhap x: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Nhap y: ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Gia tri cua {0} ^ {1} = {2} ", x, y, HamPow(x, y));
+
+            Console.ReadKey();
         }
+        
         // ______________________________BAI 41______________________________
+        public static double Tinh(int n)
+        {
+            int s = 0, t = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                t = t + i;
+                s = s + t;
+            }
+            return s;
+        }
+        
         static void Bai41()
         {
-            
+            Console.WriteLine("Nhap n: ");
+            int n = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Tong 1 + (1 + 2) + (1 + 2 + 3) + ... + (1 + 2 + 3 + ... + n) la: {0}", Tinh(n));
         }
+        
         static void Main(string[] args)
         {
             Bai24();
@@ -326,10 +350,6 @@ namespace Phần_2._Cấu_trúc_lặp
             Bai36();
 
             Bai37();
-            
-            Bai38();
-            
-            Bai39();
             
             Bai40();
             
