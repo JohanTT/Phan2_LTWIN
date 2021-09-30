@@ -272,29 +272,29 @@ namespace Phần_2._Cấu_trúc_điều_kiện
         }
         static void Main(string[] args)
         {
-            Bai12();
+            //Bai12();
 
-            Bai13();
+            //Bai13();
 
-            Bai14();
+            //Bai14();
 
-            Bai15();
+            //Bai15();
 
-            Bai16();
+            //Bai16();
 
-            Bai17();
+            //Bai17();
 
-            Bai18();
+            //Bai18();
 
-            Bai19();
+            //Bai19();
 
-            Bai20();
+            //Bai20();
 
-            Bai21();
+            //Bai21();
 
-            Bai22();
+            //Bai22();
 
-            Bai23();
+            //Bai23();
         }
     }
 }
